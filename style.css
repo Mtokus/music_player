@@ -21,7 +21,9 @@ body {
     background: linear-gradient(rgb(221, 238, 72) 0%, 
     rgb(154, 216, 245) 90%);
     box-shadow: 0px 6px 15px rgb(54, 53, 53) ;
+    
 }
+/* .container div{cursor: pointer;} */
 
 .header {
     padding: 20px;
@@ -29,7 +31,9 @@ body {
     justify-content: space-around;
     text-align: center;
 }
-
+.header i{
+    cursor: pointer;
+}
 .resim-pano {
     display: flex;
     justify-content: center;
@@ -67,12 +71,21 @@ body {
     padding-top: 20px;
 }
 .progress-area{
-    height: 5px;
+    height: 6.5px;
     width: 90%;
+    position: relative;
+    margin: auto;
     border-radius: 50px;
-    background:rgb(54, 53, 53);
+    background:#7298A6;
     cursor: pointer;
-    margin-left: 15px;
+    /* margin-left: 15px; */
+}
+.progress-area .progress-bar{
+    height: inherit;
+    width: 0%;
+    position: relative;
+    border-radius: inherit;
+    background: #ffffff;
 }
 .play-pause{
     height: 40px;
@@ -91,6 +104,7 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    cursor: pointer;
 }
 #oynat{
     /* padding-left: 2px; */
